@@ -1,0 +1,487 @@
+
+/* All styles*/
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 20px 100px;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.wrapper {
+	padding: 15px 30px;
+}
+
+/* HEADER with navigation */
+
+header {
+    /*overflow: hidden;*/
+    padding: 0 100px 20px 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+header .nav a {
+	text-decoration: none;
+	color: #777c80;
+}
+
+.header-style {
+    background-color: #3c4d5d;
+    padding: 15px;
+}
+
+
+.burger > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .burger {
+    cursor: pointer;
+    display: none;
+  }
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo a {
+	text-decoration: none;
+	letter-spacing: 5px;
+	color: white;
+}
+
+.logo span {
+	color: #0da5d4;
+	font-weight: bold;
+}
+
+ul > li {
+	padding-right: 15px;
+	letter-spacing: 1px;
+}
+
+li a:hover {
+	color: #d0b450;
+}
+
+
+header a:hover {
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+    border-bottom: 1px solid white;
+    width: 30px;
+    margin-right: 9px;
+}
+
+/*CV PHOTO SECTION*/
+
+.background-wrapper {
+    width: 100%;
+    position: relative;
+    min-height: 440px;
+}
+
+.background-photo img {
+	width: 100%; 
+}
+
+.cv-text {
+	background-color: rgba(0, 0, 0, 0.9);
+	position:absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+}
+
+.cv-text h1 {
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Comfortaa', cursive;
+	letter-spacing: 5px;
+	color: white;
+	padding-top: 200px;
+    padding-bottom: 20px;
+}
+
+.cv-text h1 span {
+	color: #0da5d4;
+}
+
+.cv-text a {
+    text-decoration: none;
+}
+
+.cv-download {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: #02172a;
+    color: #777c80;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.cv-download:hover{
+    text-decoration: underline;
+    background-color: black;
+    background-width: 20%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+    color: #d0b450;
+}
+
+/*
+.cv-text h2 {
+	color: #077a8f;
+	text-align: center;
+	margin-top: 20px;
+	background-color: #02172a;
+	width: 15%;
+	margin-left: 50%;
+}*/
+
+/* SKILLS STYLES*/
+
+.skills-left {
+   width: 40%;
+   padding: 0px 30px;
+}
+
+.skills-left h5 {
+	color: #09304d;
+	font-size: 50px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.skills-left h6 {
+	color: #b2c0cb;
+	text-align: right;
+	margin-top: 10px;
+}
+
+.skills-left img {
+	justify-content: center;
+	margin-top: 20px;
+	float: right;
+}
+
+.skills-right {
+	width: 60%;
+  padding: 0px 30px;
+}
+
+.computer-skills img, .marketing-skills img {
+	border: 1px solid #bcefff;
+	margin-bottom: 30px;
+	margin-top: 20px;
+
+}
+
+.skills-right h6 {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #6c8f95;
+}
+
+.skills-right p {
+	color: #a9b0b6;
+}
+
+
+/* WORK EXPERIENCE and EDUCATION*/
+
+.work-experience {
+    padding-bottom: 50px;
+}
+
+.work-experience h2, .education h2, .skills-and-knowledge h2 {
+	color: #13334a;
+	font-size: 50px;
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+
+.work-experience p, .education p, .skills-and-knowledge p {
+	font-size: 14px;
+	color: #6c8f95;
+	margin-top: 10px;
+}
+
+.summary {
+	width: 30%;
+}
+
+.summary h3 {
+	color: #04c6ea;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 40px;
+	font-weight: bold;
+}
+
+.summary h4 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 9px;
+}
+
+.summary h6 {
+	text-align: center;
+}
+
+.vertical-line {
+	border-right: 0.5px solid #b8bfc7;
+	margin-top: 10px;
+}
+
+.description {
+	width: 70%;
+	padding: 40px 0px 0px 10px;
+}
+
+.description h4 {
+	font-weight: bold;
+}
+
+/*SKILLS AND KNOWLEDGE */
+
+.progress-name h6 {
+	color: white; 
+	padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.myProgress {
+    width: 100%;
+    background-color: grey;
+}
+
+#photoshopBar, #analyticsBar, #adwordsBar, #fbBar {
+    width: 1%;
+    height: 10px;
+    background-color: #07b8ec;
+}
+
+.progress-name p {
+	float: right;
+    color: white;
+}
+
+.left-progress {
+	width: 50%;
+}
+
+.spinner{
+    width: 100px;
+    height: 100px;
+    
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #06c0f3;
+    border-radius: 100%;   
+    animation: spin 1.5s infinite linear;
+    padding-right: 50px;
+}
+
+.radius-skill h6{
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.radius-skill{
+    width: 30%;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Slider*/
+
+.slider, .wrap, .slide-content {
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent;
+  left: 0;
+  margin-left: 120px;
+}
+
+.arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 120px;
+}
+
+.reviews {
+    padding-top: 50px;
+}
+
+.reviews h5{
+    color: white;
+    text-align: center;
+    /*padding-top: 50px;*/
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: white;
+}
+
+
+/*HOBBIES AND INTERESTS*/
+
+.hobbies img {
+    border: 1px solid #bcefff;
+}
+
+.hobbies h2 {
+    color: #13334a;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.hobbies h6{
+    color: #b0b9c0;
+    text-align: center;
+    font-size: 15px;    
+    padding-top: 5px;
+}
+
+.hobbies {
+    padding-bottom: 100px;
+}
+
+/* CONTACTS*/
+
+.contacts {
+    height: 400px;
+    background-color: #113650;
+}
+
+.contacts h5 {
+    color: #f7ffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 30px;
+}
+
+hr {
+    background-color: #00acdb;
+    width: 50%;
+}
+
+.contacts a{
+    text-decoration: none;
+    color: white;
+    align-content: center;
+}
+
+.my-contacts {
+    padding-left: 40%;
+    padding-top: 20px;
+}
+
+.contacts img {
+  padding: 5px;
+}
+
+.contacts h6 {
+    color: white;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.social-media {
+    display: flex;
+   justify-content: center;
+}
+
+/*oblique*/
+
+
+.obliqueDivTop {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 50px;
+    }
+
+.obliqueDivTop:after {
+  position: absolute;
+  width: 100%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right left;
+  transform: skewY(5deg);
+}﻿
+
+
+
